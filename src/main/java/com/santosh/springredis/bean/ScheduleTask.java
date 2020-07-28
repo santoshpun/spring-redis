@@ -22,7 +22,7 @@ public class ScheduleTask {
         log.info(
                 "Fixed rate task with one second initial delay - " + now);
 
-        ExecutorService executor = Executors.newFixedThreadPool(1000);
+        ExecutorService executor = Executors.newFixedThreadPool(100);
 
         int count = 10000;
         for (int i = 1; i <= count; i++) {
